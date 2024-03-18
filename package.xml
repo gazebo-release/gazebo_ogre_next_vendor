@@ -27,14 +27,14 @@
   <depend>opengl</depend>
   <depend>libpoco-dev</depend>
   <depend>libfreetype-dev</depend>
-  <depend>rapidjson</depend>
-  <depend>libzzip-dev</depend>
+  <depend>rapidjson-dev</depend>
+  <depend>zziplib</depend>
   <depend>libx11-xcb-dev</depend>
   <depend>libxcb-randr0-dev</depend>
   <depend>libvulkan-dev</depend>
-  <depend>libsdl2-dev</depend>
-  <depend>libtbb-dev</depend>
-  <depend>libtinyxml-dev</depend>
+  <depend>sdl2</depend>
+  <depend>tbb</depend>
+  <depend>tinyxml2</depend>
   <depend>glslang-dev</depend>
   <depend>glslc</depend>
   <depend>libshaderc-dev</depend>
