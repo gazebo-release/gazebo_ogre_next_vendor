@@ -20,7 +20,7 @@ index 7dd36f2..208c87c 100644
  macro_log_feature(FREETYPE_FOUND "freetype" "Portable font engine" "http://www.freetype.org" FALSE "" "")
  
 -find_package(Vulkan)
-+find_package(Vulkan COMPONENTS glslang glslc shaderc_combined SPIRV-Tools)
++find_package(Vulkan COMPONENTS glslang glslc SPIRV-Tools)
  macro_log_feature(Vulkan_FOUND "vulkan-sdk" "Vulkan SDK" "https://vulkan.lunarg.com/" FALSE "" "")
  
  # Find X11
@@ -217,7 +217,7 @@ index 2fc1859..45fd7a8 100644
  ogre_add_library(RenderSystem_Vulkan ${OGRE_LIB_TYPE} ${HEADER_FILES} ${SOURCE_FILES})
 -target_link_libraries(RenderSystem_Vulkan ${OGRE_NEXT}Main ${Vulkan_LIBRARIES})
 +target_link_libraries(RenderSystem_Vulkan ${OGRE_NEXT}Main
-+  Vulkan::Vulkan MachineIndependent OSDependent GenericCodeGen OGLCompiler SPIRV SPIRV-Tools-opt SPIRV-Tools SPIRV-Tools-link shaderc_combined)
++  Vulkan::Vulkan MachineIndependent OSDependent GenericCodeGen OGLCompiler SPIRV SPIRV-Tools-opt SPIRV-Tools SPIRV-Tools-link)
  
  if( OGRE_VULKAN_WINDOW_XCB )
  	target_link_libraries(RenderSystem_Vulkan xcb-randr X11-xcb)
