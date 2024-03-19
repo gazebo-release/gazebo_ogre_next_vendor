@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(gazebo_ogre_next_vendor)
+project(gz_ogre_next_vendor)
 
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
@@ -35,5 +35,5 @@ if(BUILD_TESTING)
 endif()
 
 ament_package(
-  CONFIG_EXTRAS_POST "gazebo_ogre_next_vendor-extras.cmake.in"
+  CONFIG_EXTRAS_POST "gz_ogre_next_vendor-extras.cmake.in"
 )

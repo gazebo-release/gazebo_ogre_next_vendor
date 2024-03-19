@@ -3,13 +3,14 @@
   href="http://download.ros.org/schema/package_format2.xsd"
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
-  <name>gazebo_ogre_next_vendor</name>
+  <name>gz_ogre_next_vendor</name>
   <version>2.3.3</version>
   <description>
     Wrapper around ogre3d, it provides a fixed CMake module and an ExternalProject build of ogre.
   </description>
 
   <maintainer email="mjcarroll@intrinsic.ai">Michael Carroll</maintainer>
+  <maintainer email="addisuzt@intrinsic.ai">Addisu Z. Taddese</maintainer>
 
   <license>Apache License 2.0</license>  <!-- the contents of this package are Apache 2.0 -->
   <license>MIT</license>  <!-- ogre is MIT (https://www.ogre3d.org/licensing) -->
