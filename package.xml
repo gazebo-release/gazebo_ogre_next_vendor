@@ -4,9 +4,16 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>gz_ogre_next_vendor</name>
-  <version>2.3.3</version>
+  <!--
+    Note on package versioning:
+    This version only represents the version of the vendor package, not the
+    version of the underlying/vendored package (See <description> for that).
+    To avoid any confusion with the version of the vendor package, the major
+    version here will always be 0.
+  -->
+  <version>0.0.1</version>
   <description>
-    Wrapper around ogre3d, it provides a fixed CMake module and an ExternalProject build of ogre.
+    Vendor package for Ogre-next v2.3.3
   </description>
 
   <maintainer email="mjcarroll@intrinsic.ai">Michael Carroll</maintainer>
