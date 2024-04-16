@@ -31,6 +31,10 @@
 
   <depend>glslang-dev</depend>
   <depend>glslc</depend>
+  <depend>libboost-date-time-dev</depend>
+  <depend>libboost-dev</depend>
+  <depend>libboost-thread-dev</depend>
+  <depend>libfreeimage-dev</depend>
   <depend>libfreetype-dev</depend>
   <depend>libpoco-dev</depend>
   <depend>libshaderc-dev</depend>
