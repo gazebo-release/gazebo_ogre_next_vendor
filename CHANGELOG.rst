@@ -2,8 +2,8 @@
 Changelog for package gz_ogre_next_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2024-04-19)
+------------------
 * Add additional dependencies, fix vulkan build
 * Sort dependencies
 * Contributors: Addisu Z. Taddese
