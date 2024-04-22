@@ -2,6 +2,11 @@
 Changelog for package gz_ogre_next_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix build error due to glslang
+* Contributors: Addisu Z. Taddese
+
 0.0.3 (2024-04-19)
 ------------------
 * Add additional dependencies, fix vulkan build
