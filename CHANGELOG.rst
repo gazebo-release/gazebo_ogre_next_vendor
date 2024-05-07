@@ -2,8 +2,8 @@
 Changelog for package gz_ogre_next_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2024-05-07)
+------------------
 * Fix build on arm64  (`#3 <https://github.com/gazebo-release/gazebo_ogre_next_vendor/issues/3>`_)
   Co-authored-by: Jose Luis Rivero <jrivero@osrfoundation.org>
 * Contributors: Addisu Z. Taddese
