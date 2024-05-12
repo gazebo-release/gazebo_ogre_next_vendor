@@ -4,6 +4,21 @@ project(gz_ogre_next_vendor)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
 
+# Required for FindGzOGRE2.cmake and gz_find_package 
+# find_package(gz_cmake_vendor REQUIRED)
+find_package(gz-cmake3 REQUIRED)
+
+gz_find_package(GzOGRE2
+  VERSION 2.3.1
+  COMPONENTS
+  HlmsPbs
+  HlmsUnlit
+  Overlay
+  PlanarReflections
+  PRIVATE_FOR ogre2
+  QUIET
+)
+
 set(EXTRA_CMAKE_FLAGS)
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(aarch64.*|AARCH64.*|arm64.*|ARM64.*|arm.*|ARM.*)")
   # Flags for non SIMD architectures
@@ -12,7 +27,8 @@ if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(aarch64.*|AARCH64.*|arm64.*|ARM64.*|arm.*|A
 endif()
 
 ament_vendor(${PROJECT_NAME}
-  VCS_URL https://github.com/OGRECave/ogre-next.git
+SATISFIED ${OGRE2_FOUND}
+VCS_URL https://github.com/OGRECave/ogre-next.git
   VCS_VERSION v2.3.3
   CMAKE_ARGS
     -DOGRE_STATIC:BOOL=OFF
@@ -36,6 +52,11 @@ ament_vendor(${PROJECT_NAME}
   PATCHES
     patches/0001-Fix-incomplete-vulkan-linkage.patch
 )
+
+message("OGRE2_FOUND: ${OGRE2_FOUND}")
+message("OGRE2_VERSION: ${OGRE2_VERSION}")
+message("OGRE2_INCLUDE_DIRS: ${OGRE2_INCLUDE_DIRS}")
+message("OGRE2_LIBRARIES: ${OGRE2_LIBRARIES}")
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
