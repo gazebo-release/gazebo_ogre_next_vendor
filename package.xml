@@ -28,6 +28,7 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
+  <buildtool_depend>gz_cmake_vendor</buildtool_depend>
 
   <depend>glslang-dev</depend>
   <depend>glslc</depend>
