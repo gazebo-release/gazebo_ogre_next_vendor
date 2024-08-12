@@ -50,7 +50,7 @@ endif()
 
 ament_vendor(${PROJECT_NAME}
 SATISFIED ${OGRE2_FOUND}
-VCS_URL https://github.com/OGRECave/${GITHUB_NAME}.git
+VCS_URL https://github.com/OGRECave/ogre-next.git
   VCS_VERSION v${LIB_VER}
   CMAKE_ARGS
     -DOGRE_STATIC:BOOL=OFF
