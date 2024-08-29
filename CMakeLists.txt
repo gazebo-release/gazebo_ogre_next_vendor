@@ -14,7 +14,7 @@ find_package(ament_cmake_vendor_package REQUIRED)
 
 # Required for FindGzOGRE2.cmake and gz_find_package
 find_package(gz_cmake_vendor REQUIRED)
-find_package(gz-cmake3 REQUIRED)
+find_package(gz-cmake REQUIRED)
 
 # Set the VERSION_MATCH to "EXACT" by default, but relax the requirement
 # if we are users are building from source (determined by the
